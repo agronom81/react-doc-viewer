@@ -1,5 +1,7 @@
 # react-doc-viewer
 
+> This is a fork of https://github.com/Alcumus/react-doc-viewer (delete pdf download button)
+
 # Contents
 
 - [Current Renderable File Types](#current-renderable-file-types)

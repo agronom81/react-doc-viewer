@@ -1,6 +1,6 @@
 import React, { FC, useContext } from "react";
 import styled from "styled-components";
-import { Button, LinkButton } from "../../../components/common";
+import { Button } from "../../../components/common";
 import { IStyledProps } from "../../../types";
 import { PDFContext } from "../state";
 import { setPDFPaginated, setZoomLevel } from "../state/actions";
@@ -26,7 +26,7 @@ const PDFControls: FC<{}> = () => {
     <Container id="pdf-controls">
       {paginated && numPages > 1 && <PDFPagination />}
 
-      {currentDocument?.fileData && (
+      {/* {currentDocument?.fileData && (
         <DownloadButton
           id="pdf-download"
           href={currentDocument?.fileData as string}
@@ -34,7 +34,7 @@ const PDFControls: FC<{}> = () => {
         >
           <DownloadPDFIcon color="#000" size="75%" />
         </DownloadButton>
-      )}
+      )} */}
 
       <ControlButton
         id="pdf-zoom-out"
@@ -101,11 +101,11 @@ const ControlButton = styled(Button)`
   }
 `;
 
-const DownloadButton = styled(LinkButton)`
-  width: 30px;
-  height: 30px;
-  @media (max-width: 768px) {
-    width: 25px;
-    height: 25px;
-  }
-`;
+// const DownloadButton = styled(LinkButton)`
+//   width: 30px;
+//   height: 30px;
+//   @media (max-width: 768px) {
+//     width: 25px;
+//     height: 25px;
+//   }
+// `;
