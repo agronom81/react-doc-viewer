@@ -1,5 +1,5 @@
 {
- "name": "react-doc-viewer",
+ "name": "@agronom81/react-doc-viewer",
  "version": "0.1.0",
  "description": "Document viewer for react. Renders online/local documents.",
  "author": "Matthew Mogford / Pavlo Petrenko",
